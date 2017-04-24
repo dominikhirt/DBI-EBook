@@ -15,6 +15,16 @@
 	edition = {3rd},
 	publisher = {Apress},
 	address = {Berkely, CA, USA},
+}
+
+@book{Hows2013,
+ author = {Plugge, Eelco and Hows, David and Membrey, Peter and Hawkins, Tim},
+ title = {The Definitive Guide to MongoDB: A Complete Guide to Dealing with Big Data Using MongoDB},
+ year = {2015},
+ isbn = {1484211839, 9781484211830},
+ edition = {3rd},
+ publisher = {Apress},
+ address = {Berkely, CA, USA},
 } 
 
 @book{Copeland2013,
@@ -67,6 +77,27 @@
 	title = {{Practical MongoDB : architecting, developing, and administering MongoDB}},
 	url = {https://www.safaribooksonline.com/library/view/practical-mongodb-architecting/9781484206478/},
 	year = {2015}
+	author = {{MongoDB Inc.}, a Mongodb White Paper},
+	keywords = {BT-NoSQL},
+	pages = {10},
+	title = {{Big Data: Examples and Guidelines for the Enterprise Decision Maker}},
+	url = {http://s3.amazonaws.com/info-mongodb-com/10gen_Big_Data_White_Paper.pdf},
+	year = {2013}
+}
+@techreport{MongoDBInc.2013a,
+author = {{MongoDB Inc.}, a Mongodb White Paper},
+number = {August},
+title = {{MongoDB Architecture Guide}},
+url = {https://webassets.mongodb.com/_com_assets/collateral/MongoDB_Architecture_Guide.pdf},
+year = {2013}
+}
+@book{Edward2015,
+author = {Sabharwal, Navin and Edward, Shakuntala Gupta},
+isbn = {9781484206478},
+pages = {249},
+title = {{Practical MongoDB: Architecting, Developing, and Administering MongoDB}},
+url = {https://www.safaribooksonline.com/library/view/practical-mongodb-architecting/9781484206478/},
+year = {2015}
 }
 @book{Banker2016,
 	abstract = {Second edition. Includes index. Annotation 'MongoDB in Action' is a comprehensive guide to MongoDB for application developers. The book begins by explaining what makes MongoDB unique and describing its ideal use cases.},
@@ -107,7 +138,6 @@
 	year = {2016},
 	note = "Retrieved March 23, 2017, from
 	\url{https://docs.mongodb.com/manual/}; "
-	
 }
 
 @misc{_mscdex.,
@@ -121,8 +151,9 @@
 }
 @article{Weil_21,
 	author = {Weil, Kevin},
+	year = {2017},
 	title = {{Rainbird: Realtime Analytics at Twitter (Strata 2011)}},
-	url = {https://www.slideshare.net/kevinweil?utm{\_}campaign=profiletracking{\&}utm{\_}medium=sssite{\&}utm{\_}source=ssslideview},
+	url = {https://www.slideshare.net/kevinweil?utm_campaign=profiletracking\&utm_medium=sssite\&utm_source=ssslideview},
 	urldate = {21.03.2017}
 }
 @misc{_tpc.org.,
@@ -786,6 +817,8 @@ urldate = {2017-03-23}
  year = {2015}
 }
 
+%% RETHINK BEGIN ----
+
 @article{RethinkLimits,
 annote = {[Original String]:
 rethinkdb.com. (2017, 04 10). Retrieved from Limitations in RethinkDB: https://rethinkdb.com/limitations/},
@@ -793,8 +826,6 @@ author = {{The Linux Foundation}},
 title = {{Limitations in RethinkDB - RethinkDB}},
 url = {https://rethinkdb.com/limitations/},
 urldate = {2017-04-10},
-volume = {2017},
-year = {2017}
 }
 
 @article{RethinkDataTypes,
@@ -807,6 +838,143 @@ urldate = {2017-04-10},
 volume = {2017},
 year = {2017}
 }
+
+@article{RethinkChangefeeds,
+annote = {[Original String]:
+rethinkdb.com. (2017, 04 10). Retrieved from Changefeeds in RethinkDB: https://rethinkdb.com/docs/changefeeds/javascript/},
+author = {{The Linux Foundation}},
+title = {{Changefeeds in RethinkDB - RethinkDB}},
+url = {https://rethinkdb.com/docs/changefeeds/javascript/},
+urldate = {2017-04-10},
+volume = {2017},
+year = {2017}
+}
+
+@misc{BTreeTechTarget,
+	author = "Margaret Rouse",
+	year = "2005",
+	title = "B-Tree",
+	howpublished = "retrieved on 10.04.2017 from \url{http://searchsqlserver.techtarget.com/definition/B-tree}"
+}
+
+@misc{RethinkCNCF,
+	author = "CNCF",
+	year = "2017",
+	title = "CNCF Purchases RethinkDB Source Code and Contributes It to The Linux Foundation Under the Apache License",
+	howpublished = "retrieved on 10.04.2017 from \url{https://www.cncf.io/blog/2017/02/06/cncf-purchases-rethinkdb-source-code-contributes-linux-foundation-apache-license/}"
+}
+
+@misc{techcrunchredb,
+	author = "Jason Kincaid",
+	year = "2009",
+	title = "YC-Funded RethinkDB: A MySQL Storage Engine Built From The Ground Up For Solid State Drives",
+	howpublished = "retrieved on 10.04.2017 from \url{https://techcrunch.com/2009/07/28/yc-funded-rethinkdb-a-mysql-storage-engine-built-from-the-ground-up-for-ssds/}"
+}
+
+@article{RethinkDataStorage,
+	annote = {[Original String]:
+	rethinkdb.com. (2017, 04 10). Retrieved from RethinkDB: https://rethinkdb.com/docs/architecture/#data-storage},
+	author = {{The Linux Foundation}},
+	title = {{How is data stored on disk?}},
+	url = {https://rethinkdb.com/docs/architecture/#data-storage},
+	urldate = {2017-04-10},
+	volume = {2017},
+	year = {2017}
+}
+
+@article{RethinkSharding,
+	annote = {[Original String]:
+	rethinkdb.com. (2017, 04 10). Retrieved from RethinkDB: https://rethinkdb.com/docs/architecture/#sharding-and-replication},
+	author = {{The Linux Foundation}},
+	title = {{Sharding and replication}},
+	url = {https://rethinkdb.com/docs/architecture/#sharding-and-replication},
+	urldate = {2017-04-10},
+	volume = {2017},
+	year = {2017}
+}
+
+@article{RethinkCAP,
+	annote = {[Original String]:
+	rethinkdb.com. (2017, 04 10). Retrieved from RethinkDB: https://rethinkdb.com/docs/architecture/#cap-theorem},
+	author = {{The Linux Foundation}},
+	title = {{CAP Theorem}},
+	url = {https://rethinkdb.com/docs/architecture/#cap-theorem},
+	urldate = {2017-04-10},
+	volume = {2017},
+	year = {2017}
+}
+
+
+@article{RethinkQE,
+	annote = {[Original String]:
+	rethinkdb.com. (2017, 04 10). Retrieved from RethinkDB: https://rethinkdb.com/docs/architecture/#query-execution},
+	author = {{The Linux Foundation}},
+	title = {{Query Execution}},
+	url = {https://rethinkdb.com/docs/architecture/#query-execution},
+	urldate = {2017-04-10},
+	volume = {2017},
+	year = {2017}
+}
+
+
+@misc{rvsm2014,
+	author = {juristat.com},
+	title = {A comparison of MongoDB and RethinkDB with patent data},
+	year = {11.04.2017},
+	howpublished = "retrieved on 10.04.2017 from \url{https://juristat.com/blog/a-comparison-of-mongodb-and-rethinkdb-with-patent-data}"
+}
+
+
+
+@misc{rvsm2016,
+	author = {Narendran Thangarajan},
+	title = {MongoDB vs. RethinkDB},
+	year = {2015},
+	howpublished = "retrieved on 11.04.2017 from \url{http://ntvita.com/2015/06/04/mongo-vs-rethink.html}"
+}
+
+@misc{performanceReport,
+	author = {{The Linux Foundation}},
+	title = {RethinkDB 2.1.5 performance \& scaling report},
+	howpublished = "retrieved on 11.04.2017 from \url{https://rethinkdb.com/docs/2-1-5-performance-report/}"
+}
+
+@misc{tableCreate,
+	author = {{The Linux Foundation}},
+	title = {RethinkDB Create Table},
+	howpublished = "retrieved on 11.04.2017 from \url{https://rethinkdb.com/api/javascript/table_create/}"
+}
+
+@misc{reql,
+	author = {{The Linux Foundation}},
+	title = {Introduction to ReQL},
+	howpublished = "retrieved on 11.04.2017 from \url{https://rethinkdb.com/docs/introduction-to-reql/}"
+}
+
+%
+@online{rdbcaptheorem,
+	ALTauthor = {Thanos Pappas},
+	title = {CAP Theorem},
+	date = {2014},
+	url = {http://cs.uoi.gr/~apappas/projects/Raft&Rethinkdb/img/cap.jpg}
+}
+
+
+@misc{TechTargetAcid,
+	author = "Margaret Rouse",
+	year = "2006",
+	title = "ACID (atomicity, consistency, isolation, and durability)",
+	howpublished = "retrieved on 10.04.2017 from \url{http://searchsqlserver.techtarget.com/definition/ACID}"
+}
+
+@misc{jepsen2016,
+	author = "{jepsen.io}",
+	year = "2016",
+	title = "RethinkDB 2.1.5",
+	howpublished = "retrieved on 11.04.2017 from \url{https://jepsen.io/analyses/rethinkdb-2-1-5}"
+}
+
+%%RETHINK END
 
 %@misc{cap,
   author = "Tobias Trelle",
@@ -948,6 +1116,14 @@ year = {2017}
 	howpublished = "Retrieved from \url{https://books.google.de/books?id=WJ7NBgAAQBAJ}"
 }
 
+@article{MongoDB2016,
+	author = {{MongoDB Inc.}},
+	number = {June},
+	title = {{Unlocking Operational Intelligence from the Data Lake}},
+	url = {https://webassets.mongodb.com/mongodb_operational_data_lake.pdf},
+	year = {2016}
+}
+
 @misc{Hunger.2013,
 	title = "Data Modeling with Neo4j",
 	author = "Hunger, M.",
@@ -957,65 +1133,72 @@ year = {2017}
 
 @book{HungerBoydLyon.2016,
 	title = "The Definitive Guide to Graph Databases for the RDBMS Developer",
-	author = "Hunger, M., Boyd, R. & Lyon, W.",
+	author = "Hunger, M., Boyd, R. \& Lyon, W.",
 	year = "2016",
 	howpublished = "Retrieved April, 10. 2017, from \url{http://info.neotechnology.com/rs/773-GON-065/images/Definitive-Guide-Graph-Databases-for-RDBMS-Developer.pdf}"
 }
 
 @article{Neo4jStaff.2011,
 	title = "Intro to Graph Databases",
-	author = "Neo4j Staff",
+	author = "{{Neo4j Staff}}",
 	year = "2011",
 	howpublished = "Retrieved April, 9, 2017, from \url{https://neo4j.com/blog/recap-intro-to-graph-databases-webinar-series-1/}"
 }
 
 @misc{NeoTechnologyInc.2017a,
 	title = "Neo4j Licensing",
-	author = "Neo Technology, Inc.",
+	author = "{{Neo Technology, Inc.}}",
 	year = "2017",
 	howpublished = "Retrieved April 9, 2017, from \url{https://neo4j.com/licensing/}"
 }
 
 @misc{NeoTechnologyInc.2017b,
 	title = "Neo4j: The World’s Leading Graph Database",
-	author = "Neo Technology, Inc.",
+	author = "{{Neo Technology, Inc.}}",
 	year = "2017",
 	howpublished = "Retrieved April 9, 2017, from \url{https://neo4j.com/product/}"
 }
 
 @misc{NeoTechnologyInc.2017c,
 	title = "Graph Data Modeling Guidelines",
-	author = "Neo Technology, Inc.",
+	author = "{{Neo Technology, Inc.}}",
 	year = "2017",
 	howpublished = "Retrieved March 29, 2017, from \url{https://neo4j.com/developer/guide-data-modeling}"
 }
 
 @misc{NeoTechnologyInc.2017d,
 	title = "Intro to Cypher",
-	author = "Neo Technology, Inc.",
+	author = "{{Neo Technology, Inc.}}",
 	year = "2017",
 	howpublished = "Retrieved March 29, 2017, from \url{https://neo4j.com/developer/cypher-query-language}"
 }
 
 @misc{NeoTechnologyInc.2017e,
-	title = "Cypher Query Language Developer Guides & Tutorials",
-	author = "Neo Technology, Inc.",
+	title = "Cypher Query Language Developer Guides \& Tutorials",
+	author = "{{Neo Technology, Inc.}}",
 	year = "2017",
 	howpublished = "Retrieved April 9, 2017, from \url{https://neo4j.com/developer/cypher}"
 }
 
 @misc{NeoTechnologyInc.2017f,
 	title = "For Relational Database Developers: A SQL to Cypher Guide",
-	author = "Neo Technology, Inc.",
+	author = "{{Neo Technology, Inc.}}",
 	year = "2017",
 	howpublished = "Retrieved April 9, 2017, from \url{https://neo4j.com/developer/guide-sql-to-cypher}"
 }
 
 @misc{NeoTechnologyInc.2017g,
 	title = "Graph DB vs RDBMS",
-	author = "Neo Technology, Inc.",
+	author = "{{Neo Technology, Inc.}}",
 	year = "2017",
 	howpublished = "Retrieved April 9, 2017, from \url{https://neo4j.com/developer/graph-db-vs-rdbms/}"
+}
+
+@misc{NeoTechnologyInc.2017h,
+	title = "Neo4j and MongoDB",
+	author = "{{Neo Technology, Inc.}}",
+	year = "2017",
+	howpublished = "Retrieved April, 9, 2017, from \url{https://neo4j.com/developer/mongodb/}"
 }
 
 @misc{Mahler.2014,
@@ -1025,23 +1208,16 @@ year = {2017}
 	howpublished = "Retrieved April 9, 2017, from \url{https://www.heise.de/developer/artikel/Graphendatenbank-Flexible-Datenabfragen-mit-Neo4j-2176439.html}"
 }
 
-@book{Panzarino.2014,
-	title = "Learning Cypher",
-	author = "Panzarino, O.",
-	year = "2014",
-	howpublished = "Birmingham, United Kingdom: Packt Publishing Ltd"
-}
-
 @book{RobinsonWebberEifrem.2013,
 	title = "Graph Databases",
-	author = "Robinson, I., Webber, J. & Eifrem, E.",
+	author = "Robinson, I., Webber, J. \& Eifrem, E.",
 	year = "2013",
 	howpublished = "Sebastopol, CA: O'Reilly Media"
 }
 
 @misc{RodriguezNeubauer.2010,
 	title = "Constructions from Dots and Lines",
-	author = "Rodriguez, M. A. & Neubauer, P.",
+	author = "Rodriguez, M. A. \& Neubauer, P.",
 	year = "2010",
 	howpublished = "Retrieved from the Cornell University website: \url{https://arxiv.org/abs/1006.2361}"
 }
@@ -1055,21 +1231,21 @@ year = {2017}
 
 @misc{SolidITGmbH.2017,
 	title = "DB-Engines Ranking von Graph DBMS",
-	author = "Solid IT GmbH",
+	author = "{{Solid IT GmbH}}",
 	year = "2017",
 	howpublished = "Retrieved April 8, 2017, from \url{https://db-engines.com/de/ranking/graph+dbms}"
 }
 
 @book{WebberRobinson.2015,
 	title = "Graph Databases",
-	author = "Webber, J. & Robinson, I.",
+	author = "Webber, J. \& Robinson, I.",
 	year = "2015",
 	howpublished = "O'Reilly"
 }
 
 @misc{W3C.2014,
 	title = "Resource Description Framework (RDF)",
-	author = "W3C",
+	author = "{{W3C}}",
 	year = "2014",
 	howpublished = "Retrieved April 9, 2017, from \url{https://www.w3.org/RDF/}"
 }

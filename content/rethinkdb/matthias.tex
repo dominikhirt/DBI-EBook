@@ -18,7 +18,7 @@ They can only be 64 MB in size or smaller.
 The ordering in RethinkDB is byte-wise.
 The functions orderBy and between uses the byte representaiton of the carater.
 This has the result that RethinkDB dose not normalize identical characters with multiple codepoints.
-For example the character "é" has the UTF-8 representation \code{\\u0065\\u0301} and \code{\\u00e9}, the will be grouped separately.
+For example the character "é" has the UTF-8 representation \code{\textbackslash{}u0065\textbackslash{}u0301} and \code{\textbackslash{}u00e9}, the will be grouped separately.
 
 The usage of the cli option \code{--direct-io} is restricted to supporting file systems only.
 Typically encrypted and compressed file systems will not support this option.
@@ -47,7 +47,7 @@ It symbolizes the absence of any other value.
 
 \textbf{Objects} are key-value pairs.
 Any valid JSON object is a valid RethinkDB object.
-\begin{lstlisting}[frame=single, caption=example Object, label=refdoc]
+\begin{lstlisting}[frame=single, caption=RethinkDB's object notation, label=refdoc]
 {
 	"key"  : "valueString",
 	"key2" : false,
@@ -60,7 +60,7 @@ A RethinkDB Document is a object.
 Arrays can be empty.
 It is not enforced to use only on type of values in an Array.
 But it is highly recommended.
-\begin{lstlisting}[frame=single, caption=example Arrays, label=refdoc]
+\begin{lstlisting}[frame=single, caption=RethinkDB's array notation, label=refdoc]
 [
 	"valueString",
 	false,
@@ -90,8 +90,9 @@ With Streams you can read tremendous long lists of Data, without holding everyth
 Changefeeds are the main part of RethinkDB's real-time functionality.
 Almost all queries can be used as a changefeed.
 With a Changefeed you recive any changes on your query.
+\cite{RethinkChangefeeds}
 
-\begin{lstlisting}[frame=single, caption=example usage, label=refdoc]
+\begin{lstlisting}[frame=single, caption=implementing changefeed, label=refdoc]
 r.table('project').changes().run(conn, (err, cursor) => {
 	cursor.each((err, row) => {
 		if(err) throw err;
@@ -106,7 +107,7 @@ If the underlaying data of the query changes the callback of \code{each()} will 
 For example a new project will be added \code{{id:3, name: "awesome Project", priority:1}} into the project table.
 The \code{each()} callback will be called with the changes of the table.
 
-\begin{lstlisting}[frame=single, caption=example usage, label=refdoc]
+\begin{lstlisting}[frame=single, caption=changefeed's return value, label=refdoc]
 {
 	old_val: null,
 	new_val: {id:3, name: 'awesome Project', priority:1}
@@ -119,7 +120,7 @@ If the callback for \code{each} returns false, the cursor will stop iterating.
 
 The single document changefeed only notifies the subscriber if the document changes.
 
-\begin{lstlisting}[frame=single, caption=example usage, label=refdoc]
+\begin{lstlisting}[frame=single, caption=single document changes, label=refdoc]
 r.table('project').get(3).changes().run(conn, callback);
 \end{lstlisting}
 
@@ -133,7 +134,7 @@ The method \code{changes()} integrates with the ReQL language.
 The chaning of ReQL methods can be as complex as you wish.
 For Example changefeeds can be filter:
 
-\begin{lstlisting}[frame=single, caption=example usage, label=refdoc]
+\begin{lstlisting}[frame=single, caption=filtering changefeeds, label=refdoc]
 r.table('project').changes().filter(
     r.row('new_val')('priority').lt(r.row('old_val')('priority'))
 )('new_val').run(conn, callback)
